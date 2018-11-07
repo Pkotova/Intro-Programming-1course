@@ -6,7 +6,7 @@ int main()
 	cin>>minutes;
 	
 	hourOnTheWatch = minutes / 60;
-	minutesOnTheWatch = minutes - hourOnTheWatch*60;
+	minutesOnTheWatch = minutes % 60; //minutes - hourOnTheWatch*60;
 
 	if(hourOnTheWatch > 23)
 	{
